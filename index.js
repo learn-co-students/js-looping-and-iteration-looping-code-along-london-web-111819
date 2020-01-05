@@ -17,18 +17,22 @@ function wrapGifts(gifts) {
 
 // input = [["Ada", "Brendan", "Ali"], "birthday"]
 // writeCards(input);
-function writeCards(input){
-    for (let i = 0; i < input[0].length; i++) {
-        console.log(`Thank you ${input[0][i]}, for the wonderful ${input[1]} gift!`);
+function writeCards(input_names_array,reason){
+    let message = '';
+    let output_array =[];
+    for (let i = 0; i < input_names_array.length; i++) {
+        message = `Thank you, ${input_names_array[i]}, for the wonderful ${reason} gift!`;
+        output_array.push(message);
     }
-    return input;
+    return output_array;
 } 
 
 // countDown(10);
 
 function countDown(input){
-    while (input > -1 ){
-        console.log(`${input}`);
-        input--;
+    while (input > 0 ){
+        console.log(input);
+        input -=1 ;
     }
+    console.log(input);
 }
