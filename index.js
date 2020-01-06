@@ -1,8 +1,10 @@
 // Code your solutions in this file
 function writeCards(array, event){
+    let thankYouMsgs = []
     for (let i = 0; i < array.length; i++){
-        console.log(`Thank you, ${array[i]}, for the wonderful ${event} gift!`)
+       thankYouMsgs.pysh(`Thank you, ${array[i]}, for the wonderful ${event} gift!`)
     }
+    console.log(thankYouMsgs)
 }
 
 function countDown(number){
